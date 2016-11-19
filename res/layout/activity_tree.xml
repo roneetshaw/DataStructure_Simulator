@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tree" >
+
+    <TextView
+        android:id="@+id/txtTree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/btnTree"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutTree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtTree"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btnTreeDelete"
+            style="?android:attr/buttonStyleSmall"
+           android:background="@drawable/custom_color"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="18dp"
+            android:layout_toLeftOf="@+id/btnTreeClear"
+            android:onClick="@string/btnDelete"
+            android:padding="@dimen/btnStackControl"
+            android:text="@string/btnDelete" />
+
+        <Button
+            android:id="@+id/btnTreeClear"
+            style="?android:attr/buttonStyleSmall"
+           android:background="@drawable/custom_color"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="22dp"
+            android:layout_toLeftOf="@+id/btnStackDocs"
+            android:onClick="@string/btnClear"
+            android:padding="@dimen/btnStackControl"
+            android:text="@string/btnClear" />
+
+        <Button
+            android:id="@+id/btnStackDocs"
+            style="?android:attr/buttonStyleSmall"
+   			android:background="@drawable/custom_color"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:onClick="@string/btnDocs"
+            android:padding="@dimen/btnStackControl"
+            android:paddingRight="100dp"
+            android:text="@string/btnDocs" />
+
+        <Button
+            android:id="@+id/btnTreeAdd"
+            style="?android:attr/buttonStyleSmall"
+            android:background="@drawable/custom_color"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="27dp"
+            android:layout_toLeftOf="@+id/btnTreeDelete"
+            android:onClick="@string/btnAdd"
+            android:padding="@dimen/btnStackControl"
+            android:paddingLeft="100dp"
+            android:text="@string/btnAdd" />
+
+        <Button
+            android:id="@+id/btnDisplay"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/btnStackDocs"
+            android:background="@drawable/custom_color"
+            android:onClick="@string/btnDisplay"
+            android:text="@string/btnDisplay"
+            android:width="80dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/TreeNode7"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/TreeNode6"
+        android:layout_alignBottom="@+id/TreeNode6"
+        android:layout_marginLeft="37dp"
+        android:layout_toRightOf="@+id/TreeNode3"
+        android:background="@drawable/nodet"
+        android:gravity="center"
+        android:text="@string/txtBlank"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/TreeStickRight3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/TreeNode7"
+        android:src="@drawable/right1"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/TreeStickLeft2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/TreeStickRight3"
+        android:src="@drawable/left1"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/TreeNode1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+id/txtTree"
+        android:layout_alignTop="@+id/TreeStickLeft2"
+        android:background="@drawable/nodet"
+        android:gravity="center"
+        android:text="@string/txtBlank"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/TreeStickLeft4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/TreeNode2"
+        android:layout_below="@+id/TreeStickRight3"
+        android:src="@drawable/node1"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/TreeNode4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/TreeStickLeft4"
+        android:layout_alignLeft="@+id/TreeStickLeft4"
+        android:background="@drawable/nodet"
+        android:gravity="center"
+        android:text="@string/txtBlank"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/TreeStickRight5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TreeStickLeft2"
+        android:layout_below="@+id/TreeStickRight3"
+        android:src="@drawable/node2"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/TreeNode5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/TreeStickRight5"
+        android:layout_alignLeft="@+id/txtTree"
+        android:background="@drawable/nodet"
+        android:gravity="center"
+        android:text="@string/txtBlank"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/TreeNode2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/TreeStickLeft2"
+        android:layout_alignLeft="@+id/TreeStickLeft2"
+        android:background="@drawable/nodet"
+        android:gravity="center"
+        android:text="@string/txtBlank"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/TreeStickLeft6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TreeNode6"
+        android:layout_toLeftOf="@+id/TreeNode7"
+        android:src="@drawable/node1"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/TreeNode6"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/TreeStickRight5"
+        android:layout_toRightOf="@+id/TreeNode1"
+        android:background="@drawable/nodet"
+        android:gravity="center"
+        android:text="@string/txtBlank"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/TreeStickRight7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TreeNode3"
+        android:layout_alignTop="@+id/TreeStickLeft6"
+        android:src="@drawable/right06"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/TreeNode3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/TreeStickLeft2"
+        android:layout_marginLeft="29dp"
+        android:layout_toRightOf="@+id/TreeNode6"
+        android:background="@drawable/nodet"
+        android:gravity="center"
+        android:text="@string/txtBlank"
+        android:visibility="invisible" />
+
+</RelativeLayout>

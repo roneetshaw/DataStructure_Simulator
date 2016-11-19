@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bubbleback"
+    tools:context=".BubbleSort1" >
+
+    <TextView
+        android:id="@+id/textBubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="BUBBLE SORT"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textBubble"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnSimulate"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/custom_color"
+            android:onClick="@string/onClickSimulateB"
+            android:text="SIMULATE"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnViewBubbleDocs"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/custom_color"
+            android:onClick="DOCS"
+            android:padding="@dimen/btnStackControl"
+            android:text="VIEW DOCS" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webViewBubble"
+        android:layout_width="500dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" />
+    
+</RelativeLayout>

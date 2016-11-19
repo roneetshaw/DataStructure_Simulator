@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selectionback"
+    tools:context=".SelectionSort3" >
+
+     <LinearLayout
+        android:layout_width="870dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+       
+        android:layout_marginTop="166dp" >
+
+        <TextView
+            android:id="@+id/txtview1"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="300dp"
+            android:background="@drawable/nodestack"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <TextView
+            android:id="@+id/txtview2"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/nodestack"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <TextView
+            android:id="@+id/txtview3"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/nodestack"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <TextView
+            android:id="@+id/txtview4"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/nodestack"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="870dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+     
+        android:layout_marginTop="67dp" >
+
+        <Button
+            android:id="@+id/btnenter1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="265dp"
+            android:background="@drawable/custom_color"
+            android:onClick="EN_ELEMENT"
+            android:text="ADD" />
+        
+        <Button
+            android:id="@+id/btnstartsort1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/custom_color"
+            android:onClick="sort"
+            android:text="SORT" />
+        
+        <Button
+            android:id="@+id/btnclr1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/custom_color"
+            android:onClick="CLEAR"
+            android:text="CLEAR" />
+        
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Selection Sort"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

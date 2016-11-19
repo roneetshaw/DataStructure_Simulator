@@ -1,0 +1,252 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bbsort"
+    tools:context=".LinearSearch" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="870dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="170dp" >
+
+        <TextView
+            android:id="@+id/tView1"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginLeft="220dp"
+            android:background="@drawable/nodestack"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/tView2"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/nodestack"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/tView3"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/nodestack"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/tView4"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/nodestack"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/tView5"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/nodestack"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/tView6"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/nodestack"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="870dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="120dp" >
+
+        <ImageView
+            android:id="@+id/iView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="245dp"
+            android:visibility="invisible"
+            android:src="@drawable/arrowdwn" />
+
+        <ImageView
+            android:id="@+id/iView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_marginLeft="60dp"
+            android:src="@drawable/arrowdwn" />
+
+        <ImageView
+            android:id="@+id/iView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_marginLeft="58dp"
+            android:src="@drawable/arrowdwn" />
+
+        <ImageView
+            android:id="@+id/iView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_marginLeft="55dp"
+            android:src="@drawable/arrowdwn" />
+
+        <ImageView
+            android:id="@+id/iView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_marginLeft="58dp"
+            android:src="@drawable/arrowdwn" />
+
+        <ImageView
+            android:id="@+id/iView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_marginLeft="60dp"
+            android:src="@drawable/arrowdwn" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="870dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp" >
+
+        <Button
+            android:id="@+id/btnkey"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/custom_color"
+            android:onClick="key"
+            android:text="SEARCH(x)" />
+
+        <Button
+            android:id="@+id/btnsrch"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/custom_color"
+            android:onClick="search"
+            android:text="SIMULATE" />
+
+        <Button
+            android:id="@+id/btnLinearDocs"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/custom_color"
+            android:onClick="@string/btnDocs"
+            android:text="DOCS" />
+
+        <Button
+            android:id="@+id/btncler"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/custom_color"
+            android:onClick="CLEAR"
+            android:text="CLEAR" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="870dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout2" >
+
+        <TextView
+            android:id="@+id/tView7"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="220dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tView8"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="3dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tView9"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="3dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tView10"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="3dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tView11"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="3dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tView12"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="3dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tView13"
+        android:layout_width="500dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Linear Search"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

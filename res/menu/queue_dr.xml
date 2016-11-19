@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/itemTree" android:title="Tree"></item>
+    <item android:id="@+id/itemStack" android:title="Stack"></item>
+    
+    <item android:id="@+id/itemSort" android:title="Sort"></item>
+    <item android:id="@+id/itemSearch" android:title="Searching"></item>
+    <item android:id="@+id/itemExit" android:title="Exit"></item>
+
+</menu>

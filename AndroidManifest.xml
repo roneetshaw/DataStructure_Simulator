@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.datastructure"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.project.datastructure.MainPage"
+            android:label="@string/title_activity_main_page"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.project.datastructure.DisplayMain"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.project.datastructure.Stack_dr"
+            android:label="@string/title_activity_stack_dr"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.project.datastructure.Tree_dr"
+            android:label="@string/title_activity_tree_dr"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.project.datastructure.FifoQueue_dr"
+            android:label="@string/title_activity_fifoqueue_dr"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.project.datastructure.LinkList_dr"
+            android:label="@string/title_activity_link_list_dr"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.project.datastructure.CircularQueue_dr"
+            android:label="@string/title_activity_circularqueue_dr"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.project.datastructure.Red_Black_dr"
+            android:label="@string/title_activity_red__black_dr"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.project.datastructure.DualStack"
+            android:label="@string/title_activity_dual_stack"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.project.datastructure.DoubleLink"
+            android:label="@string/title_activity_double_link"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.project.datastructure.ModifiedLinkList"
+            android:label="@string/title_activity_modified_link_list"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.project.datastructure.BubbleSort"
+            android:label="@string/title_activity_bubble_sort"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.project.datastructure.SelectionSort"
+            android:label="@string/title_activity_selection_sort"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.project.datastructure.AvlTree"
+            android:label="@string/title_activity_avl_tree"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.project.datastructure.BubbleSort1"
+            android:label="@string/title_activity_bubble_sort1"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.project.datastructure.BubbleSort2"
+            android:label="@string/title_activity_bubble_sort"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.project.datastructure.BubbleSort3"
+            android:label="@string/title_activity_bubble_sort"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.project.datastructure.SelectionSort1"
+            android:label="@string/title_activity_selection_sort"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.project.datastructure.SelectionSort2"
+            android:label="@string/title_activity_selection_sort"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.project.datastructure.SelectionSort3"
+            android:label="@string/title_activity_selection_sort"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.project.datastructure.LinearSearch"
+            android:label="@string/title_activity_linear_search"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.project.datastructure.InsertionSort2"
+            android:label="@string/title_activity_insertionsort"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.project.datastructure.AvlTree1"
+            android:label="@string/title_activity_avl_tree1"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.project.datastructure.LLActivity"
+            android:label="@string/title_activity_ll"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.project.datastructure.RRActivity"
+            android:label="@string/title_activity_rr"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.project.datastructure.LRActivity"
+            android:label="@string/title_activity_lr"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.project.datastructure.RLActivity"
+            android:label="@string/title_activity_rl"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.project.datastructure.InsertionActivity"
+            android:label="@string/title_activity_insertion"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.project.datastructure.Merge1"
+            android:label="@string/title_activity_merge_sort"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.project.datastructure.MergeSort"
+            android:label="@string/title_activity_merge_sort"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.project.datastructure.Quick1"
+            android:label="@string/title_activity_quick_sort"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.project.datastructure.QuickSort"
+            android:label="@string/title_activity_quick_sort"
+            android:screenOrientation="landscape" >
+        </activity>
+    </application>
+
+</manifest>

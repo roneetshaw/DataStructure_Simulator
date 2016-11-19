@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="btnStack">20dp</dimen>
+    <dimen name="btnStackControl">10dp</dimen>
+    <dimen name="nodeTree">50dp</dimen>
+    <dimen name="LinkNode">100dp</dimen>
+    <dimen name="btnLinkList">80dp</dimen>
+    <dimen name="btnMarqueue">25dp</dimen>
+    <dimen name="nodeWidthQueue">60dp</dimen>
+	<dimen name="nodeArray">60dp</dimen>
+    <dimen name="nodeArrayHeight">40dp</dimen>
+	
+	
+</resources>

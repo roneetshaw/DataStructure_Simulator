@@ -1,0 +1,611 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/insertionback"
+    tools:context=".InsertionSort2" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="870dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp" >
+
+        <TextView
+            android:id="@+id/texV5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="unsorted"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/texV1"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/nodestack"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/texV2"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@drawable/nodestack"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/texV3"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@drawable/nodestack"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/texV4"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@drawable/nodestack"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btnnxt2"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/custom_color"
+            android:onClick="inSort"
+            android:padding="@dimen/btnStackControl"
+            android:text="PROCEED" />
+
+        <TextView
+            android:id="@+id/texV6"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/nodestack"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/texV7"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@drawable/nodestack"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/texV8"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@drawable/nodestack"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/texV9"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@drawable/nodestack"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/texV10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="sorted"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="870dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="30dp" >
+
+        <TextView
+            android:id="@+id/texV11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:text="First Iteration"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/texV12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:text="Second Iteration"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/texV13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:text="Third Iteration"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="870dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_alignLeft="@+id/linearLayout2"
+        android:layout_below="@+id/linearLayout5"
+        android:layout_marginTop="6dp" >
+
+        <ImageView
+            android:id="@+id/imeV1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/arrow"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/texV14"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/nodestack"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/texV15"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@drawable/nodestack"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/texV16"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@drawable/nodestack"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/texV17"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@drawable/nodestack"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20dp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/imeV4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/arrow"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/texV20"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/nodestack"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/texV21"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@drawable/nodestack"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/texV22"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@drawable/nodestack"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/texV41"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@drawable/nodestack"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20dp"
+            android:visibility="invisible" />
+        <ImageView android:id="@+id/imeV6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="80dp" android:src="@drawable/arrow" android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/texV24"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/nodestack"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/texV25"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@drawable/nodestack"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/texV43"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@drawable/nodestack"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/texV44"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@drawable/nodestack"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20dp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="870dp"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@+id/linearLayout4"
+        android:layout_below="@+id/linearLayout4"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/texV40"
+            android:layout_width="500dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="100dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="870dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_alignLeft="@+id/linearLayout3"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_marginTop="40dp" >
+
+        <ImageView
+            android:id="@+id/imeV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/arrow"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/texV27"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/nodestack"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/texV28"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@drawable/nodestack"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/texV29"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@drawable/nodestack"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/texV30"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@drawable/nodestack"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20dp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/imeV5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/arrow"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/texV32"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/nodestack"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/texV33"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@drawable/nodestack"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/texV34"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@drawable/nodestack"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/texV42"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@drawable/nodestack"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20dp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/imeV7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:src="@drawable/arrow"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/texV45"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/nodestack"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/texV46"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@drawable/nodestack"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/texV47"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@drawable/nodestack"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/texV48"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@drawable/nodestack"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20dp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="870dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/imgeV1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/arrowdwn"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/imgeV2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/arrowdwn"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/imgeV3"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/arrowdwn"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/imgeV4"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/arrowdwn"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="870dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout2"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginTop="15dp" >
+
+        <ImageView
+            android:id="@+id/imVw1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="111dp"
+            android:visibility="invisible"
+            android:src="@drawable/samll" />
+        
+         <ImageView
+            android:id="@+id/imVw7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="280dp"
+            android:visibility="invisible"
+            android:src="@drawable/samll" />
+
+         <ImageView
+             android:id="@+id/imVw8"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:visibility="invisible"
+             android:layout_marginLeft="230dp"
+             android:src="@drawable/samll3" />
+
+    </LinearLayout>
+
+    
+    <ImageView
+        android:id="@+id/imVw2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_marginLeft="111dp"
+        android:visibility="invisible"
+        android:layout_toRightOf="@+id/linearLayout6"
+        android:src="@drawable/samll1" />
+
+    <ImageView
+        android:id="@+id/imVw3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imVw2"
+        android:layout_marginLeft="285dp"
+        android:visibility="invisible"
+        android:layout_toRightOf="@+id/imVw2"
+        android:src="@drawable/samll1" />
+
+    <ImageView
+        android:id="@+id/imVw4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout3"
+        android:visibility="invisible"
+        android:layout_marginRight="110dp"
+        android:src="@drawable/samll1" />
+
+    <ImageView
+        android:id="@+id/imVw5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imVw4"
+        android:layout_alignTop="@+id/imVw4"
+        android:visibility="invisible"
+        android:layout_marginLeft="40dp"
+        android:src="@drawable/samll1" />
+
+    <ImageView
+        android:id="@+id/imVw6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imVw5"
+        android:visibility="invisible"
+        android:layout_toRightOf="@+id/imVw5"
+        android:src="@drawable/samll1" />
+
+</RelativeLayout>
