@@ -33,9 +33,6 @@ Contact details
 
 contact the developer at this email ids :
 
-
-luckywith786@gmail.com 
-
 roneet.kumar.shaw@gmail.com
 
 License
