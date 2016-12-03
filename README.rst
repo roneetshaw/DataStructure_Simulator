@@ -8,10 +8,13 @@ DSS<1.0.0> is supported in almost every tablet which are available in the market
 Main Features
 =============
 1. Stack
-2. Tree
-3. Linked List
+2. Tree, AVL Tress
+3. Linked List, Circular Linked List.
 4. Fifo
 5. Circular Queue
+6. AVL
+7. Bubble sort, Insertion sort, Selection Sort.
+8. Linear Search
 
 Installation procedure
 ======================
